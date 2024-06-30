@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+    <title>Choose the number</title>
+</head>
+<body>
+    <h1 class="text-center fs-1 ">Magic number</h1>
+    <p class="text-center">{{result}}</p>
+    <form class="d-flex flex-column mx-auto gap-2" style="max-width: 150px;" method="post"> {% csrf_token %}
+        <input class="form-control" type="number" placeholder="Turn number" name="number" min=1 max=10 required>
+        <button class="btn btn-success mx-auto" type="submit">guess</button>
+    </form>
+</body>
+</html>

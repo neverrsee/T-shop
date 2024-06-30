@@ -1,0 +1,13 @@
+{% extends "core/base.html" %}
+{% block title %}add video{% endblock %}
+
+{% block content %}
+
+    <h1 class="text-center">Новое видео</h1>
+<form class="w-100 mx-auto" action="" method="post" style="max-width: 300px;"> {% csrf_token %}
+    <input class="text-center form-control" type="text" name="title">
+    <input class="text-center form-control" type="text" name="embed_code">
+    <button type="submit" class="btn">add</button>
+</form>
+
+{% endblock %}

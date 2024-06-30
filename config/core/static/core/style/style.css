@@ -1,0 +1,291 @@
+.header{
+	background: white;
+	padding: 24px;
+}
+.container{
+	margin: 0 auto;
+	max-width: 1360px;
+}
+.contein{
+	display: flex;
+}
+.nav_list{
+	display: flex;
+}
+.item_header{
+	list-style: none;
+	margin-right:30px ;
+}
+.nav{
+	margin:auto 0;
+	margin-left: 200px;
+	margin-bottom:145px;
+	background: black;
+}
+
+.link_header{
+	text-decoration: none;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.1em;
+	color: white;
+}
+
+.hero_block{
+	background: #F9F9F9;
+	height: 250px;
+}
+.till{
+	padding-top: 103px;
+	font-family: 'Open Sans';
+	font-style: Medium;
+	font-size: 32px;
+	line-height: 37.5px;
+	text-align: center;
+	margin-top:0 ;
+}
+.contein_bbb{
+	display: flex;
+	justify-content: space-between;
+}
+.textp{
+	width: 1260px;
+	font-family: ;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+
+.link_header:hover{
+	color: greenyellow;
+}
+.but{
+	color: white;
+	background: black;
+	margin-left:540px;
+	padding: 20px 50px 20px 50px ;
+}
+.bbb{
+	color: white;
+	background: black;
+	width: 359px;
+	margin-left: 500px;
+}
+.text{
+	//styleName: p;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: 0em;
+	text-align: center;
+
+
+}
+.photo{
+	display: flex;
+	width: 300px;
+	margin-bottom:400px ;
+	padding-top: 50px;
+}
+.about{
+	background: #F9F9F9;
+	
+}
+.tt{
+	font-family: 'Open Sans';
+	font-style: Medium;
+	font-size: 32px;
+	line-height: 37.5px;
+}
+.raa{
+	list-style: none;
+	font-family: 'Open Sans';
+}
+.vvv{
+	display: flex;
+	justify-content: space-between;
+}
+.pb{
+	background: #34547A;
+	width:200px ;
+	height: 5px;
+}
+.apb{
+	background: lime;
+	height: 100%;
+	width: 75%;
+}
+.apb1{
+	background: lime;
+	height: 100%;
+	width: 85%;
+}
+.apb2{
+	background: lime;
+	height: 100%;
+	width: 95%;
+}
+.rte{
+	padding: 0;
+}
+.textet{
+	font-family: 'Open Sans';
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 79px;
+	letter-spacing: 0em;
+	text-align: left;
+	padding-left:800px ;
+}
+.more_info{
+	padding-bottom:100px;
+	background: #F9F9F9;
+}
+/*fffff*/
+.videor{
+	background: #F9F9F9;
+}
+.video{
+	font-family: 'Open Sans';
+	font-style: Medium;
+	font-size: 32px;
+	line-height: 37.5px;
+	margin-top:0 ;
+	padding-top: 100px;
+	text-align: center;
+}
+.textvideo{
+	font-family: 'Open Sans';
+	margin:0 auto ;
+	max-width: 400px;
+}
+.iff{
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+/*ggggg*/
+.qg{
+	width: 25%;
+}
+.listgal{
+	margin: 0 ;
+	padding: 0 ;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+.rfr{
+width: 100%;
+height: 100%;
+}
+.named{
+	font-family: 'Open Sans';
+	font-style: Medium;
+	font-size: 32px;
+	line-height: 37.5px;
+	margin-top:0 ;
+	}
+.logor{
+	max-width: 100px;
+}
+.foot{
+	list-style: none;
+	display: flex;
+	margin-right: 250px;
+
+}
+.footeeesr{
+	display: flex;
+	justify-content: space-between;
+	background:#967070 ;
+}
+.nameddd{
+margin-left: 250px;
+}
+.uper{
+width: 95px;
+position: fixed;
+right:0 ;
+bottom:0 ;
+}
+.container_footer{
+	display: flex;
+	justify-content: space-between;
+}
+.burger{
+	background: transparent;
+	border: none;
+	display: none;
+}
+
+@media(max-width: 835px){
+	.nav{
+		display: none;
+	}
+
+	.burger{
+		display: block;
+	}
+	.contein{
+		max-width: 603px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.bbb{
+font-size: 40px;
+	}
+	.contein_bbb{
+		max-width:737px ;
+	}
+	.textp{
+		font-size: 18px;
+	}
+	.www{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.vvv{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.photo{
+		width:471px ;
+		height:351px ;
+	}
+    .textet{
+    	font-size: 48px;
+    }
+    .moreever{
+    	font-size: 18px;
+    }
+    .videor{
+    	width: 400px;
+    	height: 490px;
+    }
+    .iff{
+    	width:590px ;
+    	height:342px ;
+    	margin-top: 99px;
+    	margin-left: 90px;
+    }
+    .
+
+
+
+
+
+
+
+}
+
+
+
+/*это комментарий для hero_block*/

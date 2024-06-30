@@ -1,0 +1,26 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}all posts{% endblock %}
+{% block content %}
+<h1 class="text-center text-dark fw-bold">Посты</h1>
+<div class="d-flex gap-4 flex-wrap justify-content-center mx-auto" style="max-width: 1080px;">
+    {% for post in posts %}
+    {% if post.is_published == True %}
+    <div class="card" style="width: 18rem;">
+        <img src="{{post.image.url}}" class="card-img-top" height="200" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{post.title}}</h5>
+            <p class="card-text">{{post.text}}</p>
+            <form action="{% url 'post_like' %}" method="post">{% csrf_token %}
+                <input type="hidden" name="post_id" value="{{post.id}}">
+                <button type="submit">
+                    <img height='25px' width="25px" src="{% static 'blog/heart.png'%}" alt="">
+                </button>
+                <span>{{post.likes}}</span>
+            </form>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}
